@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Saboroso - O melhor salgado frito de SP!</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="description" content="Site da empresa Saboroso">
+		<meta name="keywords" content="salgado, frito, fritura">
+		<meta name="author" content="Maria Luiza de Mattos ">
+		<link rel="icon"  type="image/png" href="img/coxinha.png"/> 
+		<link rel="stylesheet" type="text/css" href="style.css"> 
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-light navbar-light">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand">Saboroso</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="feature.html" class="nav-item nav-link">Sobre</a>
+                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="blog.html" class="nav-item nav-link">Galeria</a>
+                        <a href="contact.html" class="nav-item nav-link">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Fale Conosco!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container">
+                <div class="row align-items-center contact-information">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Endereço</h3>
+                                <p>Avenida Rebouças, 234, SP</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Telefone</h3>
+                                <p>19 93463-0156</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Nosso Email</h3>
+                                <p>saborosos@company.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="contact-info">
+                            <div class="contact-icon">
+                                <i class="fa fa-share"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Nossas Redes Sociais</h3>
+                                <div class="contact-social">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-youtube"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row contact-form">
+                    <script language="javascript" type="text/javascript">
+                        function valida() {
+
+                          
+                          var nome = document.forms["contato"]["nome"].value;
+                          var email = document.forms["contato"]["email"].value;
+                          var nota = document.forms["contato"]["nota"].value;
+                  
+                          if (nome == "") {
+                            alert('Por favor, Preencha o campo com seu nome!');
+                            document.forms["contato"]["nome"].focus();
+                            return false;
+                          }
+                  
+                          if (email == "") {
+                            alert('Preencha o campo com seu email');
+                            document.forms["contato"]["email"].focus();
+                            return false;
+                          }
+                  
+                          if (nota == "") {
+                            alert('Preencha o campo com a sua nota!');
+                            document.forms["contato"]["nota"].focus();
+                            return false;
+                          }
+                  
+                          alert("Dados enviados com sucesso!");
+                          document.forms["contato"].reset();
+                          return false; // Para evitar o redirecionamento para outra página
+                        }
+                      </script>
+                  
+                      <div class="row g-5">
+                        <form name="contato" onsubmit="return valida()" method="post">
+                          <div class="row g-3">
+                            <div class="col-md-6">
+                              <input name="nome" type="text" class="form-control border-2 bg-light px-4" placeholder="Seu nome" style="height: 55px;"><br>
+                            </div>
+                            <div class="col-md-6">
+                              <input name="email" type="email" class="form-control border-2 bg-light px-4" placeholder="Seu Email" style="height: 55px;"><br>
+                            </div>
+                            <div class="col-12">
+                              <select name="nota" class="form-control border-2 bg-light px-4" placeholder="Avalie nosso site!" style="height: 55px;">
+                                <option value=""> Avalie nosso site!</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                              </select><br>
+                            </div>
+                            <div class="col-12">
+                              <textarea class="form-control border-2 bg-light px-4 py-3" style="resize: none;" rows="4" placeholder="Mensagem"></textarea><br>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="copyright">
+                <div class="container">
+                    <strong>Saboroso 2024  - </strong>&copy;Todos os Direitos Reservados<br>
+        Trabalho Acadêmico sem fins Lucrativos
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/tempusdominus/js/moment.min.js"></script>
+        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
